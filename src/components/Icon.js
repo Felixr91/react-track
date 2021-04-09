@@ -1,8 +1,8 @@
 const Icon = (icon) => {
-        console.log(icon)
+        
     return (
         <div>
-            <img className='icon' src={('https://openweathermap.org/img/w/' + icon.data + '.png')}></img>
+            <img className='icon' alt='weather icon' src={('https://openweathermap.org/img/w/' + icon.data + '.png')}></img>
             
         </div>
     )

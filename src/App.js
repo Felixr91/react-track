@@ -4,6 +4,7 @@ import ChangeLocation from './components/ChangeLocation'
 import Nav from './components/Nav'
 import FiveDay from './components/FiveDay'
 import Icon from './components/Icon'
+import Fahrenheit from './components/Fahrenheit'
 
 
 const App = () =>{
@@ -23,12 +24,10 @@ const App = () =>{
         const data = await res.json()
         const city = data.name
         const kelvin = data.main.temp
-        const fahren = (Math.floor(1.8 * (kelvin - 273) + 32))
         const icon = data.weather[0].icon
         const info = data.weather[0].description
-
         setCity(city)
-        setTemp(fahren+'°F')
+        setTemp(kelvin)
         setIcon(icon)
         setDescription(info)
         } catch(e){
@@ -70,12 +69,12 @@ const App = () =>{
 
             <Route path="/" exact render={(props)=>(
               <>
-                <h2>{temp}</h2>
+                <Fahrenheit data={temp}/>
 
                 {icon.length > 0 ? 
-                  <div>
+                  <div className="flex-center">
                     <Icon data={icon}/> 
-                    {description}
+                    <p>{description}</p>
                   </div>
                 : ''}
               </>

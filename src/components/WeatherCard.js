@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import Icon from './Icon'
+import Fahrenheit from './Fahrenheit'
 
 const WeatherCard = ({ description, kelvin, datetxt, icon }) => {
 
@@ -17,10 +17,11 @@ const WeatherCard = ({ description, kelvin, datetxt, icon }) => {
     return (
         <div className="hourly-card">
             
-            <h3>{formatDate()}</h3>
-            <h3>{formatTime()}</h3>
+            <p>{formatDate()}</p>
+            <p>{formatTime()}</p>
             <p>{description}</p>
             <Icon data={icon}></Icon>
+            <Fahrenheit data={kelvin}></Fahrenheit>
 
         </div>
     )

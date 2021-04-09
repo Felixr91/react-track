@@ -1,17 +1,13 @@
-import {Link} from 'react-router-dom'
 import WeatherCard from './WeatherCard'
-// import { useState } from 'react'
-// import React from 'react'
 
 const FiveDay = (hourly) => {
 
     const ar = hourly['data']
-    console.log(ar)
 
     return (
         <div className="five-day-container">
             <h4>5 Day Forcast</h4>
-            {/* <Link to="/">Go Back</Link> */}
+ 
             <>
             {ar.map((i) => (
                 <WeatherCard 
