@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const ChangeLocation = ({ onUpdate }) => {
     const[city, setCity] = useState('')
@@ -8,7 +8,7 @@ const ChangeLocation = ({ onUpdate }) => {
         e.preventDefault()
 
         if(!city){
-            alert("Please add city")
+            alert("Please provide a city")
             return
         }
 
@@ -24,8 +24,9 @@ const ChangeLocation = ({ onUpdate }) => {
     <div className="container">
         
         <form className="change-location" onSubmit={onSubmit}>
-            <input value={city} onChange={(e) => setCity(e.target.value)}></input>
-            <input type="submit" value="Sumit Location" className="btn"></input>
+            <label className="location-label">Enter City Name</label>
+            <input className="location-field" value={city} onChange={(e) => setCity(e.target.value)}></input>
+            <input type="submit" value="GO" className="btn"></input>
         </form>
         
     </div>
