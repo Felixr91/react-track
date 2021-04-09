@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "//github.com/Felixr91/react-track/static/css/main.00e37e47.chunk.css",
+    "main.js": "//github.com/Felixr91/react-track/static/js/main.114a0567.chunk.js",
+    "main.js.map": "//github.com/Felixr91/react-track/static/js/main.114a0567.chunk.js.map",
+    "runtime-main.js": "//github.com/Felixr91/react-track/static/js/runtime-main.e474e732.js",
+    "runtime-main.js.map": "//github.com/Felixr91/react-track/static/js/runtime-main.e474e732.js.map",
+    "static/js/2.3b1016a7.chunk.js": "//github.com/Felixr91/react-track/static/js/2.3b1016a7.chunk.js",
+    "static/js/2.3b1016a7.chunk.js.map": "//github.com/Felixr91/react-track/static/js/2.3b1016a7.chunk.js.map",
+    "static/js/3.1ce8e16b.chunk.js": "//github.com/Felixr91/react-track/static/js/3.1ce8e16b.chunk.js",
+    "static/js/3.1ce8e16b.chunk.js.map": "//github.com/Felixr91/react-track/static/js/3.1ce8e16b.chunk.js.map",
+    "index.html": "//github.com/Felixr91/react-track/index.html",
+    "static/css/main.00e37e47.chunk.css.map": "//github.com/Felixr91/react-track/static/css/main.00e37e47.chunk.css.map",
+    "static/js/2.3b1016a7.chunk.js.LICENSE.txt": "//github.com/Felixr91/react-track/static/js/2.3b1016a7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e474e732.js",
+    "static/js/2.3b1016a7.chunk.js",
+    "static/css/main.00e37e47.chunk.css",
+    "static/js/main.114a0567.chunk.js"
+  ]
+}
