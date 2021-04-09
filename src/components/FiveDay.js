@@ -6,8 +6,10 @@ const FiveDay = (hourly) => {
 
     return (
         <div className="five-day-container">
-            <h4>5 Day Forcast</h4>
- 
+            
+            {ar.length > 0 ? 
+                <h4>5 Day Forcast</h4>
+            : ''}
             <>
             {ar.map((i) => (
                 <WeatherCard 
