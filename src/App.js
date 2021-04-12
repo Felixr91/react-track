@@ -46,6 +46,7 @@ const App = () =>{
         setFiveDay(hourly)
         } catch(e){
           console.log('could not get 5 Day')
+          alert('There was a problem fetching the 5 day forcast for your state.')
         }
     }
 
